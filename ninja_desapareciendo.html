@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo de NINJA Desapareciendo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <style>
+        /* mis estilos */
+        .centro{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align: center;">Ninja Desapareciendo</h1>
+    <div class="container mt-4">
+         <!--PRIMERA FILA CON LOS 4 PRIMEROS NINJAS EN 4 COLUMNAS-->
+        <div class="row">
+            <div class="col">
+                <h2>Ninja 1</h2>
+                <img id="ninja1" src="img/ninja1.jpg" alt="Ninja 1"><br>
+                <button id="btnninja1" class="btn btn-primary">Esconder</button>
+            </div>
+
+            <div class="col">
+                <h2>Ninja 2</h2>
+                <img id="ninja2" src="img/ninja2.jpg" alt="Ninja 2"><br>
+                <button id="btnninja2" class="btn btn-primary">Esconder</button>
+            </div>
+
+            <div class="col">
+                <h2>Ninja 3</h2>
+                <img id="ninja3" src="img/ninja3.jpg" alt="Ninja 3"><br>
+                <button id="btnninja3" class="btn btn-primary">Esconder</button>
+            </div>
+
+            <div class="col">
+                <h2>Ninja 4</h2>
+                <img id="ninja4" src="img/ninja4.jpg" alt="Ninja 4"><br>
+                <button id="btnninja4" class="btn btn-primary">Esconder</button>
+            </div>
+
+        </div>
+
+        <!--SEGUNDA FILA CON LOS 4 NINJAS RESTANTES EN 4 COLUMNAS-->
+
+        <div class="row">
+            <div class="col">
+                <h2>Ninja 5</h2>
+                <img id="ninja5" src="img/ninja5.jpg" alt="Ninja 5"><br>
+                <button id="btnninja5" class="btn btn-primary">Esconder</button>
+            </div>
+
+            <div class="col">
+                <h2>Ninja 6</h2>
+                <img id="ninja6" src="img/ninja6.jpg" alt="Ninja 6"><br>
+                <button id="btnninja6" class="btn btn-primary">Esconder</button>
+            </div>
+
+            <div class="col">
+                <h2>Ninja 7</h2>
+                <img id="ninja7" src="img/ninja7.jpg" alt="Ninja 7"><br>
+                <button id="btnninja7" class="btn btn-primary">Esconder</button>
+            </div>
+
+            <div class="col">
+                <h2>Ninja 8</h2>
+                <img id="ninja8" src="img/ninja8.jpg" alt="Ninja 8"><br>
+                <button id="btnninja8" class="btn btn-primary">Esconder</button>
+            </div>
+
+        </div>
+
+        <div class="row mt-6">
+            <div class="col centro">
+                <button id="reset" class="btn btn-danger centro btn-lg">RESETEAR</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- DESDE ACA SOLO SCRIPT -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script>
+        // TU CODIGO:
+        //NINJA 1
+        $('#btnninja1').click(function(){
+            $('#ninja1').hide();
+        });
+        
+        //NINJA 2
+        $('#btnninja2').click(function(){
+            $('#ninja2').hide();
+        });
+
+        //NINJA 3
+        $('#btnninja3').click(function(){
+            $('#ninja3').hide();
+        });
+
+        //NINJA 4
+        $('#btnninja4').click(function(){
+            $('#ninja4').hide();
+        });
+        
+
+        //NINJA 5
+        $('#btnninja5').click(function(){
+            $('#ninja5').hide();
+        });
+
+
+        //NINJA 6
+        $('#btnninja6').click(function(){
+            $('#ninja6').hide();
+        });
+
+
+        //NINJA 7
+        $('#btnninja7').click(function(){
+            $('#ninja7').hide();
+        });
+
+
+        //NINJA 8
+        $('#btnninja8').click(function(){
+            $('#ninja8').hide("class='accion'");
+        });
+
+        //boton reset
+        $("#reset").click(function(){
+            location.reload();
+            });
+
+    </script>
+</body>
+</html>
